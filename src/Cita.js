@@ -1,24 +1,25 @@
 import React from "react";
 
-export default function Cita() {
+export default function Cita(info) {
+  const cita = info.info;
   return (
     <div className="cita">
       <p>
-        Mascota: <span>Nina</span>
+        Mascota: <span>{cita.mascota}</span>
       </p>
       <p>
-        Dueño: <span>Martin</span>
+        Dueño: <span>{cita.dueño}</span>
       </p>
       <p>
-        Fecha: <span>2021-08-05</span>
+        Fecha: <span>{cita.fecha}</span>
       </p>
       <p>
-        Hora: <span>08:20</span>
+        Hora: <span>{cita.hora}</span>
       </p>
       <p>
-        Sintomas: <span>Le duele la pierna</span>
+        Sintomas: <span>{cita.sintomas}</span>
       </p>
-      <button class="button elimnar u-full-width">Eliminar ×</button>
+      <button className="button elimnar u-full-width">Eliminar ×</button>
     </div>
   );
 }
