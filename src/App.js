@@ -16,7 +16,7 @@ function App() {
 
   const eliminarCita = function (id) {
 
-    setListado([...listado.slice(listado.filter(cita => cita.id !== id))]);
+    setListado([...listado.filter(cita => cita.id !== id)]);
 
   }
 
